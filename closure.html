@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+
+        function parentOuter() {
+            var parentName = "Dot Net";
+            var parentCity = "Pune"
+
+            function outer() {
+                debugger;
+                var course = "Java";
+                var duration = "3 Months";
+
+                function inner1() {
+                    debugger; 
+                     console.log('inner');
+                }
+                inner1();
+            }
+            debugger;
+
+            outer();
+        }
+
+        parentOuter()
+
+
+
+        // function getPrintDetaills() {
+        //     debugger;
+        //     var printValue = "ABC";
+
+        //     function getChildValue() {
+        //         debugger;
+        //         console.log(printValue);
+        //     }
+
+        //     return getChildValue;
+        // }
+
+        //     debugger;
+        // var parent1 = getPrintDetaills();
+
+        // parent1();
+
+        // function generateEmpId() {
+        //     let empId = 0;
+
+        //     function getEmpId() {
+        //         empId++;
+        //         return empId;
+        //     }
+
+        //     return getEmpId;
+        // }
+        // debugger;
+        // var empIdGenerator = generateEmpId();
+
+        // const empId1 = empIdGenerator();
+        // const emp2 = empIdGenerator();
+        // const emp3 = empIdGenerator();
+        // const emp4 = empIdGenerator();
+
+        // var emp2Generator = generateEmpId()
+
+        // const emppp2 = emp2Generator();
+
+        // const emp5 = empIdGenerator();
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

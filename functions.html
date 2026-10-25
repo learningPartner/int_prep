@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        // func declaration , expresssion, immeidte Invoke, anounomous, arrow fun, call back, pure, recursive, generator fun ,funct currying
+
+
+
+        // (function() {
+        //     console.log("Executed");
+        // })()
+
+        // setTimeout(() => {
+
+        // }, 2000);
+
+
+        // var print = function() {
+        //     console.log('print func');
+        // }
+
+
+        // var printStudent =  function printDetails() {
+        //     console.log("Student details")
+        // }
+
+
+        // printStudent()
+
+        // printDetails()
+
+
+        // function getStudent(funP) {
+        //     debugger;
+        //     console.log('Get Studenrt Exucted');
+
+        //     funP("Chetan")
+        //     funP("Rahul")
+
+        // }
+
+        // function printStudent(name) {
+        //     debugger;
+        //     console.log("Student Details " + name)
+        // }
+        // debugger;
+        // getStudent(printStudent)
+
+        // var total = 2;
+
+        // function getSquare() {
+        //     return 5;
+        // }
+
+        // function getAdditon(num1, num2) {
+        //     const square = getSquare();
+        //     const result = num1 + num2 + square;
+        //     return result;
+        // }
+
+
+
+        // function printNum() {
+        //     console.log("Print Num Executed")
+        //     printNum();
+
+        //     console.log("Print Num Done ")
+        // }
+
+
+        // printNum()
+
+        // var numberList = [1, 2, [4, 5], 6, [7, 8, 9]];
+
+        // //output  = [1,2,4,5,6,7,8,9]
+
+        // var newArray = [];
+
+        // function getFlatArray(array) {
+        //     debugger;
+        //     for (let index = 0; index < array.length; index++) {
+        //         const element = array[index];
+        //         if (typeof element == "number") {
+        //             newArray.push(element)
+        //         } else {
+        //             getFlatArray(element)
+        //         }
+        //     }
+        // }
+        // debugger;
+        // getFlatArray(numberList)
+
+
+        // function* getNum() {
+        //      debugger;
+        //     console.log("111");
+        //     yield 1;
+        //     console.log("2nd Step")
+        //     console.log("2222")
+        //     yield 2;
+        //     console.log("3rd step")
+        //     console.log(3333);
+        //     yield 3;
+        //     console.log("end")
+        //     alert("fun eneded") 
+        // } 
+
+        // const getNumInstance =  getNum();
+        // debugger;
+        // getNumInstance.next();
+
+        // getNumInstance.next();  
+
+
+    //     function getSum(num1) {
+    //         debugger;
+    //         return function (num2) {
+    //              debugger;
+    //             return function (num3) {
+    //                  debugger;
+    //                 return num1 +  num2 + num3;
+    //             }
+    //         }
+    //     }
+    //     debugger;
+    //    const result =  getSum(1)(4)(8)
+
+       //api.freeapi.com
+
+       //employee
+
+       //getEmployee
+
+       function generateUrl(baseUrl) {
+            debugger;
+            return function (controller) {
+                 debugger;
+                return function (methodName) {
+                     debugger;
+                    return baseUrl +"/" + controller +"/" + methodName;
+                }
+            }
+        }
+
+        const getEmployee =  generateUrl("api.freeapi.com")("employee")("getAllEmployee");
+
+        const employeeUrl =  generateUrl("api.freeapi.com")("employee");
+
+        const postEMp =  employeeUrl("CreateEmployee")
+        const putEmp = employeeUrl("UpdateEmployee")
+        const deleteEmp = employeeUrl("DeleteEmployeeById?id=23")
+
+        debugger;
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
