@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // let const , rest , spread,desctrcuting, arrow fun, promise, template leterals, class, modules,   
+        // map , set, gen fun,, Default Parameters:for...of
+
+
+        //scope
+
+        // var studName = "Chetan";
+
+        // function printStudDetails() {
+
+        //     console.log(studName);
+        //     var studName = "Rahul";
+        // }
+
+        // printStudDetails()
+
+
+        // function printLoop() {
+
+        //     var student = "Rahul"
+        //     console.log(index) //
+
+        //     for (let index = 0; index < 5; index++) { 
+        //         console.log(index) 
+        //     }
+
+        //     // if(false) {
+        //     //     let index = 99;
+        //     // }
+        //     console.log(index)
+        // }
+
+        // printLoop();
+
+        // let course = "Angular";
+
+        // console.log(course);
+
+        // course = "JKava"
+
+
+        // console.log(course);
+
+        // const duaration = "2 months";
+        // console.log(duaration);
+
+        // // duaration = "3 Month"
+
+        // const cityList = ["Punbe", "Nagpur"];
+
+        // console.log(cityList);
+
+        // // cityList = ["Pune","Nag[ur]","<Mumbai"]
+
+        // cityList.push("Mumbai");
+
+        // console.log(cityList);
+
+        // const student = {
+        //     name: 'abc',
+        //     city: 'Pune'
+        // }
+
+        // console.log(student);
+        // student.state = "MH"
+
+        // console.log(student);
+
+        // let employee;
+        // var produvt;
+
+        // const employee2 ;
+
+
+        // var cityList1 = ["Pune", "Mumbai"];
+
+        // var cityList2  = ["Bhopal","Indore","Jaipaur"];
+
+        // // var newArr = cityList1.concat(cityList2);
+        // // console.log(newArr);
+        
+        // var newList = [...cityList1, ...cityList2]
+        // console.log(newList);
+
+        // var newList3 = ["Panji",...cityList1, "Thane","Solapur", ...cityList2];
+        // console.log(newList3);
+        
+        // var cloneCity2 = [...cityList2];
+        //  console.log(cloneCity2);
+
+        //  var studentBasic = {
+        //     name:'Sahchin',
+        //     city: 'Mumbai',
+        //     state:'MH'
+        //  };
+
+        //  var studentContacxt = {
+        //     email:'sachin@gmail.com',
+        //     mobile:'22334556656',
+        //     state:'Goa'
+        //  }
+
+        //  var stud = {
+        //    ...studentContacxt, ...studentBasic, altEmail:"rahul@gmail.com"
+        //  }
+
+        //   console.log(stud);
+
+        //   var studentName = "Chetan";
+        //   var studenrNam2 = "Rahul"
+
+        //   var strArray = studentName.split("");
+        //   console.log(strArray); 
+
+        //   var studStringArray = [...studentName, ...studenrNam2];
+        //   console.log(studStringArray);
+
+        //   var studStringObj = {...studentName};
+        //   console.log(studStringObj);
+          
+        
+
+        // function addNumber(...params) {
+        //     debugger;
+        // }
+        // addNumber(1,2,3)
+        // addNumber(2,2)
+        // addNumber(3,4,5,6,7,8)
+
+        var rollNoList = [121,122,123,124,125,126,127];
+
+        var [num1, num2, ...remaining] = rollNoList;
+        console.log(num1);
+        console.log(num2);
+        console.log(remaining);
+
+        var student = {
+            name: 'chetan',
+            mobile: '1122334455',
+            city: 'pune',
+            state: 'MH'
+        }
+
+        var {name, city,state, ...remaiFields} = student;
+
+
+
+         debugger;
+
+        // var first = rollNoList[0];
+        // var second = rollNoList[1];
+
+        // var remaini = [];
+
+        // for (let index =2; index < rollNoList.length; index++) {
+        //    remaini.push(rollNoList[index]); 
+        // }
+        debugger;
+ 
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
