@@ -138,36 +138,108 @@
         // addNumber(2,2)
         // addNumber(3,4,5,6,7,8)
 
-        var rollNoList = [121,122,123,124,125,126,127];
+        // var rollNoList = [121,122,123,124,125,126,127];
 
-        var [num1, num2, ...remaining] = rollNoList;
-        console.log(num1);
-        console.log(num2);
-        console.log(remaining);
+        // var [num1, num2, ...remaining] = rollNoList;
+        // console.log(num1);
+        // console.log(num2);
+        // console.log(remaining);
 
-        var student = {
-            name: 'chetan',
-            mobile: '1122334455',
-            city: 'pune',
-            state: 'MH'
-        }
-
-        var {name, city,state, ...remaiFields} = student;
-
-
-
-         debugger;
-
-        // var first = rollNoList[0];
-        // var second = rollNoList[1];
-
-        // var remaini = [];
-
-        // for (let index =2; index < rollNoList.length; index++) {
-        //    remaini.push(rollNoList[index]); 
+        // var student = {
+        //     name: 'chetan',
+        //     mobile: '1122334455',
+        //     city: 'pune',
+        //     state: 'MH'
         // }
-        debugger;
+
+        // var {name, city,state, ...remaiFields} = student;
+
+
+
+        //  debugger;
+
+        // // var first = rollNoList[0];
+        // // var second = rollNoList[1];
+
+        // // var remaini = [];
+
+        // // for (let index =2; index < rollNoList.length; index++) {
+        // //    remaini.push(rollNoList[index]); 
+        // // }
+        // debugger;
  
+
+        // function getStateName() {
+        //     return "Maharashtra"
+        // }
+
+           
+        // var studName = "Chetan Jogi"
+        // var cityName = "Pune";
+
+        // var fullDetails = studName + " " + cityName;
+        // console.log(fullDetails)
+
+        // var  details = `Student Name is ${studName} and city is ${cityName} and State Name is ${getStateName()}`;
+
+        // console.log(details)
+
+        // var textConetnt = `Lorem Ipsum is simply dummy text of the printing
+        //  and typesetting industry. Lorem Ipsum has been the industry's standard 
+        //  dummy text ever since 1966, when designers at Letraset and James Mosley,
+        //   the librarian at St Bride Printing Library in London, took a ${cityName} Cicero
+        //    translation and scrambled it to make dummy text for Letraset's Body Type sheets.
+        //     It has survived not only many decades, but also the leap into electronic typesetting,
+        //      remaining essentially unchanged. It was popularised thanks to these sheets
+        //       and more recently with desktop publishing software like Aldus PageMaker
+        //        and Microsoft Word including versions of Lorem Ipsum.`
+
+
+    //     var textContent = "Lorem Ipsum is simply dummy text of the printing and typesetting industry.";
+
+    //    textContent= textContent +  "Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers"
+    //      textContent= textContent +  at Letraset and James Mosley, the librarian at St Bride Printing Library in London, 
+    //      textContent= textContent +  took a 1914 Cicero translation and scrambled it to make dummy text for Letraset's Body Type sheets. 
+    //      textContent= textContent +  It has survived not only many decades, but also the leap into electronic typesetting,
+    //      textContent= textContent +   remaining essentially unchanged. It was popularised thanks to these sheets and more recently with desktop publishing software like Aldus PageMaker and Microsoft Word including versions of Lorem Ipsum."
+
+
+    const res =  getSum(2,3);
+
+    function getSum(num1, num2) {
+        return num1 + num2
+    }
+
+    const  res2 =  getSumOfTwoNumber(3,4);
+
+    var getSumOfTwoNumber = (num1, num2) => {
+        return num1 + num2;
+    }
+
+    var sumOfNumbers = (num1, num2) => num1 + num2;
+
+
+    // var studName = "Global Rahul";
+
+    // var studentDetail = {
+    //     studName: 'Chetan',
+    //     studCity: 'Pune',
+    //     printNameNormalFun: function () {
+    //         debugger;
+    //         console.log(this.studName)
+    //     },
+    //     printNameArrwoFun: () =>{
+    //         debugger;
+    //         console.log(this.studName)
+    //     } 
+    // }
+
+    // studentDetail.printNameNormalFun();
+
+    // studentDetail.printNameArrwoFun();
+
+
+
 
 
 

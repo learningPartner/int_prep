@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        var rollNoList = [1, 2, 34, 5, 6, 87, 3, 2, 4, 7, 9, 432, 5, 6, 78, 34];
+
+        var is34Exist = rollNoList.includes(34);
+        var is99Exist = rollNoList.includes(99);
+
+        var indexOf4 =  rollNoList.findIndex(m=>m ==4);
+        var indexOf34 =  rollNoList.findIndex(m=>m ==34);
+        var indexOf99 =  rollNoList.findIndex(m=>m ==99);
+        debugger;
+
+
+
+
+        var is34present = rollNoList.find(m => m == 34);
+
+        var is99present = rollNoList.find(m => m == 99);
+
+        var noGreatrThan5andlessThat10 = rollNoList.find(x => x > 5 && x < 10);
+
+        var is34Filter = rollNoList.filter(m => m == 34);
+        var is99presentFilter = rollNoList.filter(m => m == 99);
+
+        var noGreatrThan5andlessThat10Filter = rollNoList.filter(x => x > 5 && x < 10);
+        debugger;
+
+        var productList = [
+            { prodId: 123, prodName: 'Camera', category: 'Mobile', price: 12500, sku: 'MobMto', isAvailable: false },
+            { prodId: 23, prodName: 'Samsung Galaxy Mobile', category: 'Mobile', price: 24999, sku: 'MobSam', isAvailable: true },
+            { prodId: 55, prodName: 'iPhone 13 Mobile', category: 'Mobile', price: 54999, sku: 'MobIph', isAvailable: true, isShippingAvailable: false },
+            { prodId: 322, prodName: 'Dell Laptop', category: 'Laptop', price: 45000, sku: 'LapDel', isAvailable: true },
+            { prodId: 76, prodName: 'C-side HP Pavilion', category: 'Laptop', price: 52000, sku: 'LapHp', isAvailable: true, isShippingAvailable: true },
+            { prodId: 54, prodName: 'Sony Headphones', category: 'Accessories', price: 2999, sku: 'AccSony', isAvailable: true },
+            { prodId: 23, prodName: 'Boat Earbuds', category: 'Accessories', price: 1499, sku: 'AccBoat', isAvailable: true },
+            { prodId: 67, prodName: 'Apple Mobile', category: 'Mobile', price: 29999, sku: 'WearApl', isAvailable: true, isShippingAvailable: true },
+            { prodId: 65, prodName: 'Mi Band 6', category: 'Wearable', price: 2499, sku: 'WearMi', isAvailable: true },
+            { prodId: 34, prodName: 'Canon Camera', category: 'Camera', price: 35000, sku: 'CamCan', isAvailable: true, isShippingAvailable: false },
+            { prodId: 23, prodName: 'Logitech Mouse', category: 'Accessories', price: 799, sku: 'AccLog', isAvailable: true },
+            { prodId: 67, prodName: 'MI JBL Speaker', category: 'Accessories', price: 3499, sku: 'AccJbl', isAvailable: false }
+        ];
+
+       var osbk = {}
+
+       Object.hasOwn(obs,'')
+
+
+        var productStartWithC =  productList.filter(m=>m.prodName.startsWith("C"))
+
+         var productStartWithMobile =  productList.filter(m=>m.prodName.toLocaleLowerCase().includes("mobile"))
+
+         var prodAvailewithMore3000 = productList.filter(m=> m.isAvailable ==true && m.price< 3000)
+        debugger;
+
+        var isProd67Exist  = productList.includes()
+
+        var product67 = productList.find(m => m.prodId == 67);
+        debugger;
+
+        var product67Filter = productList.filter(m => m.prodId == 67);
+
+
+
+
+        // find, include, filter, indexOf
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
